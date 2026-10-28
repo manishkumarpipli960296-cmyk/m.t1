@@ -3,321 +3,95 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#f4f6fc">
-<meta name="description" content="Trade With Mohit - Stock market education and daily market analysis.">
-<title>TRADE WITH MOHIT | Market Education</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f8ff">
+<title>TRADE WITH MOHIT</title>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f6fc;
-  color: #111827;
-  text-align: center;
-}
-
-.container {
-  width: 100%;
-  max-width: 520px;
-  margin: auto;
-  padding: 24px 20px 35px;
-}
-
-.online {
-  display: inline-block;
-  background: #e4f8ed;
-  color: #269661;
-  padding: 12px 22px;
-  border-radius: 35px;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.profile {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto 24px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0879ed, #00c6c8);
-  border: 6px solid white;
-  box-shadow: 0 8px 25px #00000018;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 43px;
-  font-weight: 800;
-  overflow: hidden;
-}
-
-/* Add your profile image if available */
-.profile img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-h1 {
-  font-size: clamp(28px, 7vw, 38px);
-  line-height: 1.2;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-
-.tagline {
-  color: #1766b6;
-  font-size: 19px;
-  font-weight: 700;
-  line-height: 1.5;
-  margin-bottom: 23px;
-}
-
-.stars {
-  color: #f5a000;
-  font-size: 35px;
-  letter-spacing: 3px;
-  margin-bottom: 6px;
-}
-
-.rating {
-  color: #777;
-  font-size: 16px;
-  margin-bottom: 28px;
-}
-
-.join-btn {
-  display: block;
-  width: 100%;
-  background: linear-gradient(100deg, #1681f5, #0753d5);
-  color: white;
-  text-decoration: none;
-  padding: 23px 12px;
-  border-radius: 22px;
-  font-size: 20px;
-  font-weight: 800;
-  box-shadow: 0 9px 20px #0864df25;
-  margin-bottom: 26px;
-  transition: transform .2s;
-}
-
-.join-btn:active {
-  transform: scale(.98);
-}
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin-bottom: 34px;
-}
-
-.stat {
-  background: white;
-  padding: 22px 5px;
-  border-radius: 20px;
-  box-shadow: 0 5px 20px #00000007;
-}
-
-.stat strong {
-  display: block;
-  color: #1268bf;
-  font-size: 27px;
-  margin-bottom: 9px;
-}
-
-.stat span {
-  font-size: 14px;
-  color: #333;
-}
-
-.section-title {
-  font-size: 25px;
-  line-height: 1.4;
-  font-weight: 800;
-  margin-bottom: 12px;
-}
-
-.blue {
-  color: #1268bf;
-}
-
-.subtitle {
-  color: #777;
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.offer {
-  background: #fff0d8;
-  color: #c56a1a;
-  padding: 18px 10px;
-  border-radius: 35px;
-  font-size: 17px;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
-
-.features {
-  background: white;
-  text-align: left;
-  padding: 23px 20px;
-  border-radius: 22px;
-  margin-bottom: 22px;
-  box-shadow: 0 5px 20px #00000007;
-}
-
-.features h2 {
-  font-size: 20px;
-  margin-bottom: 18px;
-}
-
-.feature {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin: 16px 0;
-  line-height: 1.5;
-  color: #374151;
-  font-size: 15px;
-}
-
-.check {
-  color: #16875a;
-  font-weight: 800;
-}
-
-.disclaimer {
-  color: #777;
-  font-size: 12px;
-  line-height: 1.7;
-  margin: 22px 0;
-}
-
-footer {
-  color: #777;
-  font-size: 12px;
-  padding-top: 12px;
-}
-
-@media (max-width: 360px) {
-  .container { padding: 20px 14px; }
-  .stat strong { font-size: 23px; }
-  .stat span { font-size: 12px; }
-  .join-btn { font-size: 17px; }
-}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#f4f8ff;color:#101c39}
+.container{max-width:520px;margin:auto;padding:22px 18px}
+.online{display:inline-block;background:#ddf8e9;color:#168451;
+padding:12px 20px;border-radius:30px;font-weight:bold;margin-bottom:22px}
+.profile{width:150px;height:150px;border-radius:50%;border:6px solid white;
+box-shadow:0 5px 22px #0001;overflow:hidden;margin:0 auto 20px}
+.profile img{width:100%;height:100%;object-fit:cover;object-position:center}
+h1{font-size:clamp(27px,7vw,36px);font-weight:900;line-height:1.2;margin-bottom:12px}
+.tagline{font-size:18px;font-weight:bold;color:#0875e9;line-height:1.5;margin-bottom:14px}
+.stars{color:#f5a500;font-size:32px;letter-spacing:3px}
+.rating{color:#64748b;margin:7px 0 25px;font-size:15px}
+.join{display:block;text-decoration:none;color:white;background:linear-gradient(100deg,#078ff5,#0759e9);
+font-weight:bold;font-size:19px;padding:20px 10px;border-radius:22px;margin-bottom:24px;
+box-shadow:0 8px 20px #0875e926}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-bottom:28px}
+.stat{background:white;padding:18px 4px;border-radius:18px;box-shadow:0 5px 18px #00000008}
+.stat strong{display:block;color:#0875e9;font-size:23px;margin-bottom:8px}
+.stat span{font-size:13px}
+h2{font-size:24px;line-height:1.4;margin-bottom:10px}
+.blue{color:#0875e9}
+.sub{color:#64748b;line-height:1.6;margin-bottom:20px}
+.features{background:white;padding:20px 17px;border-radius:20px;text-align:left;margin-bottom:20px}
+.features p{font-size:15px;color:#344563;margin:12px 0;line-height:1.4}
+.check{color:#15965b;font-weight:bold;margin-right:7px}
+.offer{background:#fff0d6;color:#bd5c09;padding:18px 10px;border-radius:30px;font-weight:bold;margin-bottom:20px}
+.disclaimer{font-size:12px;color:#64748b;line-height:1.6;margin:20px 0}
+footer{font-size:12px;color:#64748b;padding:10px 0}
 </style>
 </head>
 
 <body>
 <main class="container">
 
-  <div class="online">● TRADE WITH MOHIT</div>
+<div class="online">● TRADE WITH MOHIT</div>
 
-  <div class="profile">
-    TM
-  </div>
+<div class="profile">
+  <img src="mohit.jpg" alt="Trade With Mohit">
+</div>
 
-  <h1>TRADE WITH<br>MOHIT</h1>
+<h1>TRADE WITH MOHIT</h1>
+<p class="tagline">📈 Stock Market Learning &amp; Analysis</p>
 
-  <div class="tagline">
-    📈 Stock Market Learning & Analysis
-  </div>
+<div class="stars">★★★★★</div>
+<p class="rating">Learn • Analyse • Manage Risk</p>
 
-  <div class="stars">★★★★★</div>
-  <div class="rating">
-    Learn • Analyse • Manage Risk
-  </div>
+<a class="join" href="https://t.me/YOUR_CHANNEL"
+target="_blank" rel="noopener noreferrer">
+✈ Join Telegram Channel →
+</a>
 
-  <!-- Replace YOUR_TELEGRAM_LINK with your actual invite link -->
-  <a class="join-btn"
-     href="https://t.me/YOUR_TELEGRAM_LINK"
-     target="_blank"
-     rel="noopener noreferrer">
-    Join Telegram Channel →
-  </a>
+<div class="stats">
+  <div class="stat"><strong>Daily</strong><span>Market Updates</span></div>
+  <div class="stat"><strong>Learn</strong><span>Market Basics</span></div>
+  <div class="stat"><strong>Risk</strong><span>Awareness</span></div>
+</div>
 
-  <div class="stats">
-    <div class="stat">
-      <strong>Daily</strong>
-      <span>Market Updates</span>
-    </div>
+<h2>Get <span class="blue">Daily Market Education</span><br>
+for NIFTY &amp; BANKNIFTY</h2>
 
-    <div class="stat">
-      <strong>Learn</strong>
-      <span>Market Basics</span>
-    </div>
+<p class="sub">Learn | Analyse | Trade Smarter</p>
 
-    <div class="stat">
-      <strong>Risk</strong>
-      <span>Awareness</span>
-    </div>
-  </div>
+<div class="features">
+  <p><span class="check">✓</span> Daily Market Analysis</p>
+  <p><span class="check">✓</span> Chart Reading &amp; Strategy</p>
+  <p><span class="check">✓</span> Risk Management</p>
+  <p><span class="check">✓</span> Stock Market Basics</p>
+  <p><span class="check">✓</span> Trading Discipline</p>
+</div>
 
-  <h2 class="section-title">
-    Learn <span class="blue">Stock Market</span><br>
-    Step by Step
-  </h2>
+<a class="join" href="https://t.me/YOUR_CHANNEL"
+target="_blank" rel="noopener noreferrer">
+Join Our Telegram Channel →
+</a>
 
-  <p class="subtitle">
-    Explore market concepts, chart analysis,
-    NIFTY and BANKNIFTY educational content.
-  </p>
+<div class="offer">📚 Explore Market Education</div>
 
-  <div class="offer">
-    📚 Start Learning Today
-  </div>
+<p class="disclaimer">
+<strong>Risk Disclaimer:</strong> This page is for educational
+purposes only. Stock market and derivatives trading involve
+financial risk. No profit is guaranteed. Make informed decisions.
+</p>
 
-  <div class="features">
-    <h2>📊 What You Will Learn</h2>
-
-    <div class="feature">
-      <span class="check">✓</span>
-      <span>Stock market fundamentals and terminology</span>
-    </div>
-
-    <div class="feature">
-      <span class="check">✓</span>
-      <span>NIFTY and BANKNIFTY chart analysis basics</span>
-    </div>
-
-    <div class="feature">
-      <span class="check">✓</span>
-      <span>Technical analysis and market trends</span>
-    </div>
-
-    <div class="feature">
-      <span class="check">✓</span>
-      <span>Risk management and trading discipline</span>
-    </div>
-  </div>
-
-  <a class="join-btn"
-     href="https://t.me/YOUR_TELEGRAM_LINK"
-     target="_blank"
-     rel="noopener noreferrer">
-    Explore Our Channel →
-  </a>
-
-  <p class="disclaimer">
-    <strong>Risk Disclaimer:</strong>
-    This page is for educational purposes only.
-    Stock market and derivatives trading involve
-    financial risk. No profit or accuracy is guaranteed.
-    Please make informed decisions.
-  </p>
-
-  <footer>
-    © 2026 TRADE WITH MOHIT. All rights reserved.
-  </footer>
-
+<footer>© 2026 TRADE WITH MOHIT. All rights reserved.</footer>
 </main>
 </body>
 </html>
