@@ -6,20 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#071426">
 
-  <title>Mohit Aggarwal Trader | Trading Education</title>
-
-  <meta name="description"
-    content="Explore trading education, market basics, chart analysis and risk management with Mohit Aggarwal Trader.">
+  <title>Mohit Aggarwal Trader | Market Education</title>
 
   <style>
-    :root {
-      --bg: #071426;
-      --card: #10233a;
-      --green: #13b981;
-      --text: #ffffff;
-      --muted: #b7c7d9;
-    }
-
     * {
       margin: 0;
       padding: 0;
@@ -27,230 +16,194 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
+      background: #071426;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-    }
-
     .container {
-      width: min(100% - 32px, 1000px);
+      width: 92%;
+      max-width: 900px;
       margin: auto;
     }
 
     header {
       padding: 18px 0;
-      border-bottom: 1px solid #203149;
+      border-bottom: 1px solid #26364b;
     }
 
-    .navbar {
+    .brand {
       display: flex;
       align-items: center;
       gap: 12px;
     }
 
     .logo {
-      width: 48px;
-      height: 48px;
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
       display: grid;
       place-items: center;
-      background: var(--green);
-      color: #062016;
-      border-radius: 12px;
-      font-size: 23px;
+      background: #13b981;
+      color: #071426;
+      font-size: 24px;
       font-weight: bold;
     }
 
     .brand h2 {
       font-size: 17px;
-      line-height: 1.3;
     }
 
     .brand p {
+      color: #13b981;
       font-size: 11px;
-      color: var(--green);
       letter-spacing: 1px;
     }
 
     .hero {
-      padding: 42px 0 30px;
-    }
-
-    .hero-card {
-      background: linear-gradient(145deg, #122842, #0c1b2e);
-      border: 1px solid #243951;
-      border-radius: 22px;
-      padding: 28px 22px;
+      margin: 28px 0;
+      padding: 28px 18px;
       text-align: center;
+      border: 1px solid #26364b;
+      border-radius: 20px;
+      background: linear-gradient(145deg, #132942, #0b192b);
     }
 
     .tag {
       display: inline-block;
-      color: #55e6b4;
-      background: #103b36;
-      border: 1px solid #1b5c4c;
+      padding: 5px 12px;
       border-radius: 30px;
-      padding: 6px 12px;
+      background: #103b36;
+      color: #5ce6b7;
       font-size: 11px;
       font-weight: bold;
-      letter-spacing: 1px;
     }
 
     h1 {
-      font-size: clamp(29px, 6vw, 46px);
-      line-height: 1.15;
-      margin: 18px 0 14px;
+      margin: 18px 0 12px;
+      font-size: clamp(30px, 7vw, 44px);
+      line-height: 1.2;
     }
 
-    .hero p {
-      color: var(--muted);
-      max-width: 600px;
+    .intro {
+      max-width: 580px;
       margin: 0 auto 22px;
-      font-size: 15px;
+      color: #b7c7d9;
+      font-size: 14px;
     }
 
     .chart {
-      margin: 24px auto;
-      max-width: 560px;
-      padding: 12px;
+      width: 100%;
+      max-width: 520px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
       background: #09172a;
-      border: 1px solid #263d55;
-      border-radius: 15px;
+      border: 1px solid #26364b;
     }
 
-    .chart svg {
+    .telegram-btn {
       display: block;
       width: 100%;
-      height: auto;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      width: 100%;
       max-width: 340px;
-      padding: 15px 18px;
-      background: var(--green);
-      color: #052218;
+      margin: 20px auto 0;
+      padding: 14px 18px;
+      border-radius: 10px;
+      background: #13b981;
+      color: #071426;
+      font-size: 15px;
       font-weight: bold;
-      border-radius: 11px;
-      transition: transform 0.2s, background 0.2s;
+      text-decoration: none;
+      transition: 0.2s;
     }
 
-    .btn:hover {
-      background: #28d69c;
+    .telegram-btn:hover {
+      background: #35d6a0;
       transform: translateY(-2px);
-    }
-
-    .section {
-      padding: 28px 0;
     }
 
     .section-title {
       text-align: center;
-      font-size: 26px;
+      font-size: 25px;
       margin-bottom: 8px;
     }
 
-    .section-subtitle {
-      color: var(--muted);
+    .section-desc {
+      color: #b7c7d9;
       text-align: center;
-      margin-bottom: 24px;
-      font-size: 14px;
+      font-size: 13px;
+      margin-bottom: 22px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 13px;
+      gap: 12px;
     }
 
-    .topic {
-      background: var(--card);
-      border: 1px solid #243951;
-      padding: 18px 14px;
-      border-radius: 15px;
+    .card {
+      padding: 17px 13px;
+      border-radius: 14px;
+      background: #10233a;
+      border: 1px solid #26364b;
     }
 
-    .topic-icon {
+    .card .icon {
       font-size: 25px;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .topic h3 {
-      font-size: 16px;
+    .card h3 {
+      font-size: 15px;
       margin-bottom: 5px;
     }
 
-    .topic p {
-      color: var(--muted);
+    .card p {
+      color: #b7c7d9;
+      font-size: 12px;
+    }
+
+    .join-box {
+      margin: 28px 0;
+      padding: 25px 18px;
+      text-align: center;
+      background: #10233a;
+      border: 1px solid #26364b;
+      border-radius: 17px;
+    }
+
+    .join-box p {
+      margin-top: 8px;
+      color: #b7c7d9;
       font-size: 13px;
     }
 
-    .join-section {
-      text-align: center;
-      padding: 34px 20px;
-      margin: 20px 0 30px;
-      background: var(--card);
-      border: 1px solid #243951;
-      border-radius: 18px;
-    }
-
-    .join-section p {
-      color: var(--muted);
-      margin: 10px auto 20px;
-      font-size: 14px;
-    }
-
     .disclaimer {
-      padding: 16px;
-      background: #0b1b2d;
+      margin: 20px 0;
+      padding: 14px;
       border-left: 3px solid #e7b94c;
       border-radius: 5px;
-      color: #c2ccda;
-      font-size: 12px;
-      margin-bottom: 24px;
+      background: #0c1c2e;
+      color: #c4cfdd;
+      font-size: 11px;
     }
 
     footer {
-      border-top: 1px solid #203149;
+      padding: 20px 10px;
+      border-top: 1px solid #26364b;
       text-align: center;
-      padding: 22px 12px;
       color: #8fa2b8;
       font-size: 12px;
     }
 
-    @media (min-width: 700px) {
-      .hero-card {
-        padding: 42px 30px;
+    @media (min-width: 650px) {
+      .hero {
+        padding: 40px 30px;
       }
 
       .grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
-      }
-
-      .hero {
-        padding-top: 55px;
-      }
-    }
-
-    @media (max-width: 360px) {
-      .container {
-        width: min(100% - 22px, 1000px);
-      }
-
-      .hero-card {
-        padding: 22px 14px;
-      }
-
-      .topic {
-        padding: 14px 10px;
       }
     }
   </style>
@@ -259,12 +212,11 @@
 <body>
 
   <header>
-    <div class="container navbar">
+    <div class="container brand">
       <div class="logo">M</div>
-
-      <div class="brand">
+      <div>
         <h2>MOHIT AGGARWAL TRADER</h2>
-        <p>TRADING EDUCATION</p>
+        <p>STOCK MARKET EDUCATION</p>
       </div>
     </div>
   </header>
@@ -272,157 +224,130 @@
   <main class="container">
 
     <section class="hero">
-      <div class="hero-card">
+      <span class="tag">LEARN • UNDERSTAND • PRACTICE</span>
 
-        <span class="tag">LEARN • UNDERSTAND • PRACTICE</span>
+      <h1>
+        Learn the Market.<br>
+        Understand the Risk.
+      </h1>
 
-        <h1>
-          Learn the Market.<br>
-          Understand the Risk.
-        </h1>
+      <p class="intro">
+        Explore stock-market basics, chart analysis, trading
+        terminology and risk management through educational content.
+      </p>
 
-        <p>
-          Explore market basics, chart reading, trading concepts
-          and risk management through educational content.
-        </p>
+      <svg class="chart" viewBox="0 0 500 210"
+           xmlns="http://www.w3.org/2000/svg"
+           role="img"
+           aria-label="Illustrative market chart">
+        <g stroke="#20364e" stroke-width="1">
+          <path d="M10 40 H490 M10 80 H490 M10 120 H490 M10 160 H490 M10 200 H490"/>
+        </g>
 
-        <a
-          class="btn"
-          href="https://t.me/YOUR_CHANNEL"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ✈ Join Telegram Channel
-        </a>
+        <g stroke-width="2">
+          <path d="M55 155 V95" stroke="#13b981"/>
+          <rect x="48" y="110" width="14" height="35" fill="#13b981"/>
 
-        <div class="chart">
-          <svg viewBox="0 0 500 220"
-               xmlns="http://www.w3.org/2000/svg"
-               role="img"
-               aria-label="Illustration of a market candlestick chart">
+          <path d="M110 130 V65" stroke="#f06b75"/>
+          <rect x="103" y="78" width="14" height="35" fill="#f06b75"/>
 
-            <g stroke="#20364e" stroke-width="1">
-              <path d="M10 40 H490 M10 80 H490 M10 120 H490 M10 160 H490 M10 200 H490"/>
-              <path d="M70 10 V210 M150 10 V210 M230 10 V210 M310 10 V210 M390 10 V210"/>
-            </g>
+          <path d="M165 115 V48" stroke="#13b981"/>
+          <rect x="158" y="62" width="14" height="38" fill="#13b981"/>
 
-            <g stroke-width="2">
-              <path d="M35 135 V95 M28 105 H42" stroke="#13b981"/>
-              <rect x="29" y="108" width="12" height="24" fill="#13b981"/>
+          <path d="M220 95 V35" stroke="#13b981"/>
+          <rect x="213" y="47" width="14" height="35" fill="#13b981"/>
 
-              <path d="M75 115 V65" stroke="#13b981"/>
-              <rect x="69" y="78" width="12" height="27" fill="#13b981"/>
+          <path d="M275 110 V53" stroke="#f06b75"/>
+          <rect x="268" y="65" width="14" height="30" fill="#f06b75"/>
 
-              <path d="M115 120 V75" stroke="#f06b75"/>
-              <rect x="109" y="85" width="12" height="23" fill="#f06b75"/>
+          <path d="M330 80 V25" stroke="#13b981"/>
+          <rect x="323" y="37" width="14" height="32" fill="#13b981"/>
 
-              <path d="M155 105 V50" stroke="#13b981"/>
-              <rect x="149" y="62" width="12" height="32" fill="#13b981"/>
+          <path d="M385 70 V18" stroke="#13b981"/>
+          <rect x="378" y="28" width="14" height="30" fill="#13b981"/>
 
-              <path d="M195 88 V42" stroke="#13b981"/>
-              <rect x="189" y="51" width="12" height="25" fill="#13b981"/>
+          <path d="M440 48 V10" stroke="#13b981"/>
+          <rect x="433" y="18" width="14" height="23" fill="#13b981"/>
+        </g>
 
-              <path d="M235 100 V55" stroke="#f06b75"/>
-              <rect x="229" y="65" width="12" height="25" fill="#f06b75"/>
+        <path d="M20 175 L100 145 L155 155 L215 105 L270 120 L325 75 L380 85 L470 30"
+              fill="none" stroke="#35d6a0"
+              stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
 
-              <path d="M275 80 V35" stroke="#13b981"/>
-              <rect x="269" y="45" width="12" height="25" fill="#13b981"/>
-
-              <path d="M315 68 V22" stroke="#13b981"/>
-              <rect x="309" y="32" width="12" height="26" fill="#13b981"/>
-
-              <path d="M355 85 V38" stroke="#f06b75"/>
-              <rect x="349" y="47" width="12" height="27" fill="#f06b75"/>
-
-              <path d="M395 60 V15" stroke="#13b981"/>
-              <rect x="389" y="25" width="12" height="26" fill="#13b981"/>
-
-              <path d="M435 45 V8" stroke="#13b981"/>
-              <rect x="429" y="16" width="12" height="21" fill="#13b981"/>
-            </g>
-
-            <path d="M20 175 L90 150 L145 160 L205 115 L260 130 L325 85 L375 100 L460 35"
-                  fill="none" stroke="#35d7a3"
-                  stroke-width="2.5" stroke-linecap="round"
-                  stroke-linejoin="round" opacity=".8"/>
-          </svg>
-        </div>
-
-        <p style="font-size:12px; margin-bottom:0;">
-          Educational content only. No guaranteed returns.
-        </p>
-
-      </div>
+      <!-- Replace the URL below with your genuine educational Telegram channel -->
+      <a
+        class="telegram-btn"
+        href="https://t.me/YOUR_EDUCATIONAL_CHANNEL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ✈ Join Educational Telegram
+      </a>
     </section>
 
-    <section class="section">
+    <section>
       <h2 class="section-title">What You'll Learn</h2>
-
-      <p class="section-subtitle">
+      <p class="section-desc">
         Build your understanding of important market concepts.
       </p>
 
       <div class="grid">
-
-        <article class="topic">
-          <div class="topic-icon">📊</div>
+        <div class="card">
+          <div class="icon">📊</div>
           <h3>Chart Analysis</h3>
-          <p>Understand candlesticks, charts and market trends.</p>
-        </article>
+          <p>Learn about charts, candlesticks and trends.</p>
+        </div>
 
-        <article class="topic">
-          <div class="topic-icon">📘</div>
+        <div class="card">
+          <div class="icon">📘</div>
           <h3>Market Basics</h3>
-          <p>Explore market terminology and basic concepts.</p>
-        </article>
+          <p>Understand key market terms and concepts.</p>
+        </div>
 
-        <article class="topic">
-          <div class="topic-icon">🛡️</div>
+        <div class="card">
+          <div class="icon">🛡️</div>
           <h3>Risk Management</h3>
-          <p>Learn about risk awareness and trading discipline.</p>
-        </article>
+          <p>Explore risk awareness and trading discipline.</p>
+        </div>
 
-        <article class="topic">
-          <div class="topic-icon">🎓</div>
+        <div class="card">
+          <div class="icon">🎓</div>
           <h3>Trading Concepts</h3>
-          <p>Study educational examples and trading principles.</p>
-        </article>
-
+          <p>Study educational examples and principles.</p>
+        </div>
       </div>
     </section>
 
-    <section class="join-section">
-      <h2>Continue Learning With Us</h2>
-
+    <section class="join-box">
+      <h2>Continue Your Learning</h2>
       <p>
-        Join the Telegram channel for market education and
-        learning updates.
+        Follow educational updates and learn market fundamentals.
       </p>
 
       <a
-        class="btn"
-        href="https://t.me/YOUR_CHANNEL"
+        class="telegram-btn"
+        href="https://t.me/YOUR_EDUCATIONAL_CHANNEL"
         target="_blank"
         rel="noopener noreferrer"
       >
-        ✈ Join Telegram Now
+        ✈ Join Telegram Channel
       </a>
     </section>
 
     <div class="disclaimer">
       <strong>Risk Disclaimer:</strong>
-      This page is for educational purposes only and does not
-      provide personalized financial advice or guarantee profits.
-      Financial markets involve risk, and losses are possible.
-      Please research independently and consult a qualified
-      financial professional when needed.
+      This website provides educational information only. It does not
+      guarantee profits or provide personalized financial advice.
+      Trading involves risk, including possible loss of capital.
     </div>
 
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Mohit Aggarwal Trader</p>
-    <p>Trading Education • Learn Responsibly</p>
+    © <span id="year"></span> Mohit Aggarwal Trader
+    <br>
+    Stock Market Education • Learn Responsibly
   </footer>
 
   <script>
